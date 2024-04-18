@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APP RESPIRACION</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="contador">
+        <i class="bi bi-volume-down-fill invisible" id="volumeActive"></i>
+        <i class="bi bi-volume-mute-fill" id="volumeMute"></i>
+        <p id="contador"></p>
+      </div>
+
+      <div id="accion"></div>
+    </div>
+
+    <div class="ciclos">
+      <i class="bi bi-plus-circle"></i>
+      <p id="ciclos"></p>
+    </div>
+
+    <button class="btn button_start">iniciar</button>
+    <button class="btn button_stop invisible" id="buttonStop">pausar</button>
+    <button class="btn button_restart invisible" id="buttonRestart">
+      Reiniciar
+    </button>
+
+    <audio
+      id="audio"
+      src="https://cdn.freesound.org/previews/319/319868_1125482-lq.mp3"
+    ></audio>
+
+    <audio
+      id="audio2"
+      src="https://cdn.freesound.org/previews/153/153140_2364561-lq.mp3"
+    ></audio>
+
+    <audio
+      src="https://cdn.freesound.org/previews/591/591282_13322965-lq.mp3"
+      id="audio3"
+    ></audio>
+    <script src="./index.js"></script>
+  </body>
+</html>
